@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_
 include learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/progress.make
 
 learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/msg/Person.js
+learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/srv/AddTwoInts.js
 
 
 /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/msg/Person.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,14 @@ learning_communication/CMakeFiles/learning_communication_generate_messages_nodej
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from learning_communication/Person.msg"
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg -Ilearning_communication:/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p learning_communication -o /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/msg
 
+/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/srv/AddTwoInts.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/srv/AddTwoInts.js: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from learning_communication/AddTwoInts.srv"
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv -Ilearning_communication:/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p learning_communication -o /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/srv
+
 learning_communication_generate_messages_nodejs: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs
 learning_communication_generate_messages_nodejs: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/msg/Person.js
+learning_communication_generate_messages_nodejs: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/gennodejs/ros/learning_communication/srv/AddTwoInts.js
 learning_communication_generate_messages_nodejs: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build.make
 
 .PHONY : learning_communication_generate_messages_nodejs

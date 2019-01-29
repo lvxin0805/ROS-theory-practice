@@ -283,6 +283,32 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f learning_communication/CMakeFiles/client.dir/build.make learning_communication/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f learning_communication/CMakeFiles/server.dir/build.make learning_communication/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
 # Target rules for targets named listener
 
 # Build rule for target.
@@ -569,6 +595,58 @@ _learning_communication_generate_messages_check_deps_Person/fast:
 .PHONY : _learning_communication_generate_messages_check_deps_Person/fast
 
 #=============================================================================
+# Target rules for targets named _learning_communication_generate_messages_check_deps_AddTwoInts
+
+# Build rule for target.
+_learning_communication_generate_messages_check_deps_AddTwoInts: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _learning_communication_generate_messages_check_deps_AddTwoInts
+.PHONY : _learning_communication_generate_messages_check_deps_AddTwoInts
+
+# fast build rule for target.
+_learning_communication_generate_messages_check_deps_AddTwoInts/fast:
+	$(MAKE) -f learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/build.make learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/build
+.PHONY : _learning_communication_generate_messages_check_deps_AddTwoInts/fast
+
+#=============================================================================
+# Target rules for targets named learning_communication_generate_messages_lisp
+
+# Build rule for target.
+learning_communication_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication_generate_messages_lisp
+.PHONY : learning_communication_generate_messages_lisp
+
+# fast build rule for target.
+learning_communication_generate_messages_lisp/fast:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build
+.PHONY : learning_communication_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named learning_communication_gencpp
+
+# Build rule for target.
+learning_communication_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication_gencpp
+.PHONY : learning_communication_gencpp
+
+# fast build rule for target.
+learning_communication_gencpp/fast:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/build
+.PHONY : learning_communication_gencpp/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -620,45 +698,6 @@ learning_communication_geneus/fast:
 	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_geneus.dir/build.make learning_communication/CMakeFiles/learning_communication_geneus.dir/build
 .PHONY : learning_communication_geneus/fast
 
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named learning_communication_gencpp
-
-# Build rule for target.
-learning_communication_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication_gencpp
-.PHONY : learning_communication_gencpp
-
-# fast build rule for target.
-learning_communication_gencpp/fast:
-	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/build
-.PHONY : learning_communication_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named learning_communication_generate_messages_lisp
-
-# Build rule for target.
-learning_communication_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication_generate_messages_lisp
-.PHONY : learning_communication_generate_messages_lisp
-
-# fast build rule for target.
-learning_communication_generate_messages_lisp/fast:
-	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build
-.PHONY : learning_communication_generate_messages_lisp/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -681,6 +720,8 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... client"
+	@echo "... server"
 	@echo "... listener"
 	@echo "... talker"
 	@echo "... learning_communication_gennodejs"
@@ -703,13 +744,14 @@ help:
 	@echo "... learning_communication_generate_messages_eus"
 	@echo "... learning_communication_generate_messages"
 	@echo "... _learning_communication_generate_messages_check_deps_Person"
+	@echo "... _learning_communication_generate_messages_check_deps_AddTwoInts"
+	@echo "... learning_communication_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... learning_communication_gencpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... learning_communication_generate_messages_cpp"
 	@echo "... learning_communication_geneus"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... learning_communication_gencpp"
-	@echo "... learning_communication_generate_messages_lisp"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "learning_communication: 1 messages, 0 services")
+message(STATUS "learning_communication: 1 messages, 1 services")
 
 set(MSG_I_FLAGS "-Ilearning_communication:/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_learning_communication_generate_messages_check_deps_${_filena
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "learning_communication" "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg" ""
 )
 
+get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" NAME_WE)
+add_custom_target(_learning_communication_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "learning_communication" "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -36,6 +41,12 @@ _generate_msg_cpp(learning_communication
 )
 
 ### Generating Services
+_generate_srv_cpp(learning_communication
+  "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/learning_communication
+)
 
 ### Generating Module File
 _generate_module_cpp(learning_communication
@@ -50,6 +61,8 @@ add_dependencies(learning_communication_generate_messages learning_communication
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg" NAME_WE)
+add_dependencies(learning_communication_generate_messages_cpp _learning_communication_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(learning_communication_generate_messages_cpp _learning_communication_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -69,6 +82,12 @@ _generate_msg_eus(learning_communication
 )
 
 ### Generating Services
+_generate_srv_eus(learning_communication
+  "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/learning_communication
+)
 
 ### Generating Module File
 _generate_module_eus(learning_communication
@@ -83,6 +102,8 @@ add_dependencies(learning_communication_generate_messages learning_communication
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg" NAME_WE)
+add_dependencies(learning_communication_generate_messages_eus _learning_communication_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(learning_communication_generate_messages_eus _learning_communication_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -102,6 +123,12 @@ _generate_msg_lisp(learning_communication
 )
 
 ### Generating Services
+_generate_srv_lisp(learning_communication
+  "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/learning_communication
+)
 
 ### Generating Module File
 _generate_module_lisp(learning_communication
@@ -116,6 +143,8 @@ add_dependencies(learning_communication_generate_messages learning_communication
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg" NAME_WE)
+add_dependencies(learning_communication_generate_messages_lisp _learning_communication_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(learning_communication_generate_messages_lisp _learning_communication_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -135,6 +164,12 @@ _generate_msg_nodejs(learning_communication
 )
 
 ### Generating Services
+_generate_srv_nodejs(learning_communication
+  "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/learning_communication
+)
 
 ### Generating Module File
 _generate_module_nodejs(learning_communication
@@ -149,6 +184,8 @@ add_dependencies(learning_communication_generate_messages learning_communication
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg" NAME_WE)
+add_dependencies(learning_communication_generate_messages_nodejs _learning_communication_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(learning_communication_generate_messages_nodejs _learning_communication_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -168,6 +205,12 @@ _generate_msg_py(learning_communication
 )
 
 ### Generating Services
+_generate_srv_py(learning_communication
+  "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/learning_communication
+)
 
 ### Generating Module File
 _generate_module_py(learning_communication
@@ -182,6 +225,8 @@ add_dependencies(learning_communication_generate_messages learning_communication
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg" NAME_WE)
+add_dependencies(learning_communication_generate_messages_py _learning_communication_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(learning_communication_generate_messages_py _learning_communication_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

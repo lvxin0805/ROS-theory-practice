@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_
 include learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/progress.make
 
 learning_communication/CMakeFiles/learning_communication_generate_messages_eus: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/msg/Person.l
+learning_communication/CMakeFiles/learning_communication_generate_messages_eus: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/srv/AddTwoInts.l
 learning_communication/CMakeFiles/learning_communication_generate_messages_eus: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/manifest.l
 
 
@@ -62,12 +63,18 @@ learning_communication/CMakeFiles/learning_communication_generate_messages_eus: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from learning_communication/Person.msg"
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg -Ilearning_communication:/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p learning_communication -o /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/msg
 
+/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/srv/AddTwoInts.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/srv/AddTwoInts.l: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from learning_communication/AddTwoInts.srv"
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv -Ilearning_communication:/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p learning_communication -o /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/srv
+
 /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for learning_communication"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for learning_communication"
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication learning_communication std_msgs
 
 learning_communication_generate_messages_eus: learning_communication/CMakeFiles/learning_communication_generate_messages_eus
 learning_communication_generate_messages_eus: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/msg/Person.l
+learning_communication_generate_messages_eus: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/srv/AddTwoInts.l
 learning_communication_generate_messages_eus: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/share/roseus/ros/learning_communication/manifest.l
 learning_communication_generate_messages_eus: learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/build.make
 

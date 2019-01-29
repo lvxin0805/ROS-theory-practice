@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/msg/Person.msg"
-services_str = ""
+services_str = "/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/src/learning_communication/srv/AddTwoInts.srv"
 pkg_name = "learning_communication"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -56,11 +56,10 @@ find_package(catkin REQUIRED COMPONENTS
   )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+  add_service_files(
+    FILES
+    AddTwoInts.srv
+  )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -206,3 +205,12 @@ target_link_libraries(talker ${catkin_LIBRARIES})
 
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
+
+add_executable(server src/server.cpp)
+target_link_libraries(server ${catkin_LIBRARIES})
+add_dependencies(server ${PROJECT_NAME}_gencpp)
+
+add_executable(client src/client.cpp)
+target_link_libraries(client ${catkin_LIBRARIES})
+add_dependencies(client ${PROJECT_NAME}_gencpp)
+

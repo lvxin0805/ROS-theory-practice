@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -121,6 +110,17 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -164,6 +164,36 @@ preinstall/fast:
 depend:
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+learning_communication/CMakeFiles/client.dir/rule:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/client.dir/rule
+.PHONY : learning_communication/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: learning_communication/CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/client.dir/build.make learning_communication/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/server.dir/rule:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/server.dir/rule
+.PHONY : learning_communication/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: learning_communication/CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/server.dir/build.make learning_communication/CMakeFiles/server.dir/build
+.PHONY : server/fast
 
 # Convenience name for target.
 learning_communication/CMakeFiles/listener.dir/rule:
@@ -496,6 +526,66 @@ _learning_communication_generate_messages_check_deps_Person/fast:
 .PHONY : _learning_communication_generate_messages_check_deps_Person/fast
 
 # Convenience name for target.
+learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/rule:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/rule
+.PHONY : learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/rule
+
+# Convenience name for target.
+_learning_communication_generate_messages_check_deps_AddTwoInts: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/rule
+
+.PHONY : _learning_communication_generate_messages_check_deps_AddTwoInts
+
+# fast build rule for target.
+_learning_communication_generate_messages_check_deps_AddTwoInts/fast:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/build.make learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_AddTwoInts.dir/build
+.PHONY : _learning_communication_generate_messages_check_deps_AddTwoInts/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages_lisp: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
+
+.PHONY : learning_communication_generate_messages_lisp
+
+# fast build rule for target.
+learning_communication_generate_messages_lisp/fast:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build
+.PHONY : learning_communication_generate_messages_lisp/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+.PHONY : learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+
+# Convenience name for target.
+learning_communication_gencpp: learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+
+.PHONY : learning_communication_gencpp
+
+# fast build rule for target.
+learning_communication_gencpp/fast:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/build
+.PHONY : learning_communication_gencpp/fast
+
+# Convenience name for target.
 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -555,50 +645,32 @@ learning_communication_geneus/fast:
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_geneus.dir/build.make learning_communication/CMakeFiles/learning_communication_geneus.dir/build
 .PHONY : learning_communication_geneus/fast
 
-# Convenience name for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+src/client.o: src/client.cpp.o
 
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : src/client.o
 
-.PHONY : rosgraph_msgs_generate_messages_nodejs
+# target to build an object file
+src/client.cpp.o:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/client.dir/build.make learning_communication/CMakeFiles/client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+src/client.i: src/client.cpp.i
 
-# Convenience name for target.
-learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule:
-	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
-.PHONY : learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+.PHONY : src/client.i
 
-# Convenience name for target.
-learning_communication_gencpp: learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+# target to preprocess a source file
+src/client.cpp.i:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/client.dir/build.make learning_communication/CMakeFiles/client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
 
-.PHONY : learning_communication_gencpp
+src/client.s: src/client.cpp.s
 
-# fast build rule for target.
-learning_communication_gencpp/fast:
-	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/build
-.PHONY : learning_communication_gencpp/fast
+.PHONY : src/client.s
 
-# Convenience name for target.
-learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule:
-	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
-.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-learning_communication_generate_messages_lisp: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
-
-.PHONY : learning_communication_generate_messages_lisp
-
-# fast build rule for target.
-learning_communication_generate_messages_lisp/fast:
-	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build
-.PHONY : learning_communication_generate_messages_lisp/fast
+# target to generate assembly for a file
+src/client.cpp.s:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/client.dir/build.make learning_communication/CMakeFiles/client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
 
 src/listener.o: src/listener.cpp.o
 
@@ -626,6 +698,33 @@ src/listener.s: src/listener.cpp.s
 src/listener.cpp.s:
 	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
+
+src/server.o: src/server.cpp.o
+
+.PHONY : src/server.o
+
+# target to build an object file
+src/server.cpp.o:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/server.dir/build.make learning_communication/CMakeFiles/server.dir/src/server.cpp.o
+.PHONY : src/server.cpp.o
+
+src/server.i: src/server.cpp.i
+
+.PHONY : src/server.i
+
+# target to preprocess a source file
+src/server.cpp.i:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/server.dir/build.make learning_communication/CMakeFiles/server.dir/src/server.cpp.i
+.PHONY : src/server.cpp.i
+
+src/server.s: src/server.cpp.s
+
+.PHONY : src/server.s
+
+# target to generate assembly for a file
+src/server.cpp.s:
+	cd /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build && $(MAKE) -f learning_communication/CMakeFiles/server.dir/build.make learning_communication/CMakeFiles/server.dir/src/server.cpp.s
+.PHONY : src/server.cpp.s
 
 src/talker.o: src/talker.cpp.o
 
@@ -662,10 +761,12 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
+	@echo "... rebuild_cache"
+	@echo "... client"
+	@echo "... server"
 	@echo "... listener"
 	@echo "... talker"
 	@echo "... learning_communication_gennodejs"
@@ -689,16 +790,23 @@ help:
 	@echo "... install/strip"
 	@echo "... learning_communication_generate_messages"
 	@echo "... _learning_communication_generate_messages_check_deps_Person"
+	@echo "... _learning_communication_generate_messages_check_deps_AddTwoInts"
+	@echo "... learning_communication_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... learning_communication_gencpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... learning_communication_generate_messages_cpp"
 	@echo "... learning_communication_geneus"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... learning_communication_gencpp"
-	@echo "... learning_communication_generate_messages_lisp"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
+	@echo "... src/server.o"
+	@echo "... src/server.i"
+	@echo "... src/server.s"
 	@echo "... src/talker.o"
 	@echo "... src/talker.i"
 	@echo "... src/talker.s"

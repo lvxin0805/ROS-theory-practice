@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD="/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build"
-export PYTHONPATH="/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
