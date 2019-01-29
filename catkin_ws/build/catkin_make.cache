@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/install -G Unix Makefiles

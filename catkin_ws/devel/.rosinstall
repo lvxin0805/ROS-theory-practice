@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/setup.sh
