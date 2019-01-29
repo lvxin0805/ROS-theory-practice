@@ -392,27 +392,40 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 # Convenience name for "all" pass in the directory.
 learning_communication/all: learning_communication/CMakeFiles/listener.dir/all
 learning_communication/all: learning_communication/CMakeFiles/talker.dir/all
+learning_communication/all: learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all
 
 .PHONY : learning_communication/all
 
 # Convenience name for "clean" pass in the directory.
+learning_communication/clean: learning_communication/CMakeFiles/listener.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/talker.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_gennodejs.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_genlisp.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_genpy.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/roscpp_generate_messages_py.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-learning_communication/clean: learning_communication/CMakeFiles/listener.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-learning_communication/clean: learning_communication/CMakeFiles/talker.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_generate_messages.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_geneus.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_gencpp.dir/clean
+learning_communication/clean: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/clean
 
 .PHONY : learning_communication/clean
 
@@ -420,6 +433,209 @@ learning_communication/clean: learning_communication/CMakeFiles/std_msgs_generat
 learning_communication/preinstall:
 
 .PHONY : learning_communication/preinstall
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/listener.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/listener.dir/all:
+	$(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=19,20 "Built target listener"
+.PHONY : learning_communication/CMakeFiles/listener.dir/all
+
+# Include target in all.
+all: learning_communication/CMakeFiles/listener.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/listener.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/listener.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/listener.dir/rule
+
+# Convenience name for target.
+listener: learning_communication/CMakeFiles/listener.dir/rule
+
+.PHONY : listener
+
+# clean rule for target.
+learning_communication/CMakeFiles/listener.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/clean
+.PHONY : learning_communication/CMakeFiles/listener.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/listener.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/talker.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/talker.dir/all:
+	$(MAKE) -f learning_communication/CMakeFiles/talker.dir/build.make learning_communication/CMakeFiles/talker.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/talker.dir/build.make learning_communication/CMakeFiles/talker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=21,22 "Built target talker"
+.PHONY : learning_communication/CMakeFiles/talker.dir/all
+
+# Include target in all.
+all: learning_communication/CMakeFiles/talker.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/talker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/talker.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/talker.dir/rule
+
+# Convenience name for target.
+talker: learning_communication/CMakeFiles/talker.dir/rule
+
+.PHONY : talker
+
+# clean rule for target.
+learning_communication/CMakeFiles/talker.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/talker.dir/build.make learning_communication/CMakeFiles/talker.dir/clean
+.PHONY : learning_communication/CMakeFiles/talker.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/talker.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_gennodejs.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_gennodejs.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gennodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_gennodejs.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gennodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_communication_gennodejs"
+.PHONY : learning_communication/CMakeFiles/learning_communication_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_gennodejs.dir/rule
+
+# Convenience name for target.
+learning_communication_gennodejs: learning_communication/CMakeFiles/learning_communication_gennodejs.dir/rule
+
+.PHONY : learning_communication_gennodejs
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_gennodejs.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gennodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_gennodejs.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_gennodejs.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_gennodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/all: learning_communication/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/all: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=16 "Built target learning_communication_generate_messages_nodejs"
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages_nodejs: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/rule
+
+.PHONY : learning_communication_generate_messages_nodejs
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_genlisp.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_genlisp.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_genlisp.dir/build.make learning_communication/CMakeFiles/learning_communication_genlisp.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_genlisp.dir/build.make learning_communication/CMakeFiles/learning_communication_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_communication_genlisp"
+.PHONY : learning_communication/CMakeFiles/learning_communication_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
+
+# Convenience name for target.
+learning_communication_genlisp: learning_communication/CMakeFiles/learning_communication_genlisp.dir/rule
+
+.PHONY : learning_communication_genlisp
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_genlisp.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_genlisp.dir/build.make learning_communication/CMakeFiles/learning_communication_genlisp.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_genlisp.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_genpy.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_genpy.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_genpy.dir/build.make learning_communication/CMakeFiles/learning_communication_genpy.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_genpy.dir/build.make learning_communication/CMakeFiles/learning_communication_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_communication_genpy"
+.PHONY : learning_communication/CMakeFiles/learning_communication_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_genpy.dir/rule
+
+# Convenience name for target.
+learning_communication_genpy: learning_communication/CMakeFiles/learning_communication_genpy.dir/rule
+
+.PHONY : learning_communication_genpy
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_genpy.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_genpy.dir/build.make learning_communication/CMakeFiles/learning_communication_genpy.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_genpy.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_genpy.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target learning_communication/CMakeFiles/std_msgs_generate_messages_py.dir
@@ -450,6 +666,39 @@ learning_communication/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: learning_communication/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/all: learning_communication/CMakeFiles/std_msgs_generate_messages_py.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/all: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=17,18 "Built target learning_communication_generate_messages_py"
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages_py: learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/rule
+
+.PHONY : learning_communication_generate_messages_py
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -518,75 +767,6 @@ clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# clean rule for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target learning_communication/CMakeFiles/listener.dir
-
-# All Build rule for target.
-learning_communication/CMakeFiles/listener.dir/all:
-	$(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/depend
-	$(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=12,13 "Built target listener"
-.PHONY : learning_communication/CMakeFiles/listener.dir/all
-
-# Include target in all.
-all: learning_communication/CMakeFiles/listener.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-learning_communication/CMakeFiles/listener.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/listener.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_communication/CMakeFiles/listener.dir/rule
-
-# Convenience name for target.
-listener: learning_communication/CMakeFiles/listener.dir/rule
-
-.PHONY : listener
-
-# clean rule for target.
-learning_communication/CMakeFiles/listener.dir/clean:
-	$(MAKE) -f learning_communication/CMakeFiles/listener.dir/build.make learning_communication/CMakeFiles/listener.dir/clean
-.PHONY : learning_communication/CMakeFiles/listener.dir/clean
-
-# clean rule for target.
-clean: learning_communication/CMakeFiles/listener.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target learning_communication/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -615,70 +795,6 @@ learning_communication/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: learning_communication/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# clean rule for target.
-learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
@@ -811,43 +927,6 @@ clean: learning_communication/CMakeFiles/roscpp_generate_messages_nodejs.dir/cle
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target learning_communication/CMakeFiles/talker.dir
-
-# All Build rule for target.
-learning_communication/CMakeFiles/talker.dir/all:
-	$(MAKE) -f learning_communication/CMakeFiles/talker.dir/build.make learning_communication/CMakeFiles/talker.dir/depend
-	$(MAKE) -f learning_communication/CMakeFiles/talker.dir/build.make learning_communication/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=14,15 "Built target talker"
-.PHONY : learning_communication/CMakeFiles/talker.dir/all
-
-# Include target in all.
-all: learning_communication/CMakeFiles/talker.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-learning_communication/CMakeFiles/talker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/talker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_communication/CMakeFiles/talker.dir/rule
-
-# Convenience name for target.
-talker: learning_communication/CMakeFiles/talker.dir/rule
-
-.PHONY : talker
-
-# clean rule for target.
-learning_communication/CMakeFiles/talker.dir/clean:
-	$(MAKE) -f learning_communication/CMakeFiles/talker.dir/build.make learning_communication/CMakeFiles/talker.dir/clean
-.PHONY : learning_communication/CMakeFiles/talker.dir/clean
-
-# clean rule for target.
-clean: learning_communication/CMakeFiles/talker.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target learning_communication/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
@@ -972,6 +1051,338 @@ learning_communication/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: learning_communication/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/all: learning_communication/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/all: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=13,14 "Built target learning_communication_generate_messages_eus"
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages_eus: learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/rule
+
+.PHONY : learning_communication_generate_messages_eus
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_generate_messages.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_py.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_communication_generate_messages"
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all
+
+# Include target in all.
+all: learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages: learning_communication/CMakeFiles/learning_communication_generate_messages.dir/rule
+
+.PHONY : learning_communication_generate_messages
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all:
+	$(MAKE) -f learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/build.make learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/build.make learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target _learning_communication_generate_messages_check_deps_Person"
+.PHONY : learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/rule
+
+# Convenience name for target.
+_learning_communication_generate_messages_check_deps_Person: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/rule
+
+.PHONY : _learning_communication_generate_messages_check_deps_Person
+
+# clean rule for target.
+learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/build.make learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/clean
+.PHONY : learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# clean rule for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/all: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/all: learning_communication/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=12 "Built target learning_communication_generate_messages_cpp"
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages_cpp: learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/rule
+
+.PHONY : learning_communication_generate_messages_cpp
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_geneus.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_geneus.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_eus.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_geneus.dir/build.make learning_communication/CMakeFiles/learning_communication_geneus.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_geneus.dir/build.make learning_communication/CMakeFiles/learning_communication_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_communication_geneus"
+.PHONY : learning_communication/CMakeFiles/learning_communication_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_geneus.dir/rule
+
+# Convenience name for target.
+learning_communication_geneus: learning_communication/CMakeFiles/learning_communication_geneus.dir/rule
+
+.PHONY : learning_communication_geneus
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_geneus.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_geneus.dir/build.make learning_communication/CMakeFiles/learning_communication_geneus.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_geneus.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# clean rule for target.
+learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_gencpp.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_gencpp.dir/all: learning_communication/CMakeFiles/learning_communication_generate_messages_cpp.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_communication_gencpp"
+.PHONY : learning_communication/CMakeFiles/learning_communication_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+
+# Convenience name for target.
+learning_communication_gencpp: learning_communication/CMakeFiles/learning_communication_gencpp.dir/rule
+
+.PHONY : learning_communication_gencpp
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_gencpp.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_gencpp.dir/build.make learning_communication/CMakeFiles/learning_communication_gencpp.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_gencpp.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir
+
+# All Build rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/all: learning_communication/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/all: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/depend
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles --progress-num=15 "Built target learning_communication_generate_messages_lisp"
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+learning_communication_generate_messages_lisp: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/rule
+
+.PHONY : learning_communication_generate_messages_lisp
+
+# clean rule for target.
+learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/clean:
+	$(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/clean
+.PHONY : learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: learning_communication/CMakeFiles/learning_communication_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 

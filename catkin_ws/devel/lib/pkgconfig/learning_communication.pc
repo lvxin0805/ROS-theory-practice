@@ -3,6 +3,6 @@ prefix=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel
 Name: learning_communication
 Description: Description of learning_communication
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/include
 Libs: -L/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/lib 
-Requires: 
+Requires: roscpp rospy std_msgs message_runtime
