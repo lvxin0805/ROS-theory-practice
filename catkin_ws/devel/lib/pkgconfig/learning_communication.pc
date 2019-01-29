@@ -1,0 +1,8 @@
+prefix=/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel
+
+Name: learning_communication
+Description: Description of learning_communication
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/devel/lib 
+Requires: 

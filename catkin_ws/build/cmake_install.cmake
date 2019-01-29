@@ -117,6 +117,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/amit/ROS/ROS-deepblue-study/ROS-theory-practice/catkin_ws/build/learning_communication/cmake_install.cmake")
 
 endif()
 
